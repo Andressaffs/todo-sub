@@ -12,7 +12,7 @@ class TodoServiceImpl(private val todoRepository: TodoRepository): TodoService {
     private val logger = LoggerFactory.getLogger(this::class.java)
 
     override fun addTodo(todo: Todo): Todo {
-        logger.info("chegou no service $todo")
+//        logger.info("chegou no service $todo")
         return todoRepository.saveCql(todo)
     }
 
