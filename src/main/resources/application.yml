@@ -1,6 +1,9 @@
 micronaut:
   application:
     name: todoSub
+endpoints:
+  health:
+    enabled: true
 cassandra:
   default:
     basic:

@@ -10,7 +10,7 @@ import javax.inject.Singleton
 @Singleton
 class TodoRepositoryImpl(private val cqlSession: CqlSession): TodoRepository {
 
-    private val logger = LoggerFactory.getLogger(this::class.java)
+//    private val logger = LoggerFactory.getLogger(this::class.java)
 
     override fun saveCql(todo: Todo): Todo {
 //        logger.info("antes de salvar $todo")
